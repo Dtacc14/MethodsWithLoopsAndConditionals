@@ -126,9 +126,9 @@ namespace MethodsWithLoopsAndConditionals
             var userGuess = x;
             var userGuessTwo = y;
             Console.WriteLine("Pick a number");
-            userGuess = int.Parse(Console.ReadLine());
+            var works = int.TryParse(Console.ReadLine(), out userGuess);
             Console.WriteLine("Pick a second number");
-            userGuessTwo = int.Parse(Console.ReadLine());
+            var worksTwo = int.TryParse(Console.ReadLine(), out userGuessTwo);
             if (userGuess > userGuessTwo)
             {
                 Console.WriteLine($"{userGuess} is greater than {userGuessTwo}"); 
@@ -142,7 +142,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             int userGuess;
             Console.WriteLine("Pick a number, any number!");
-            userGuess = int.Parse(Console.ReadLine());
+            var works = int.TryParse(Console.ReadLine(), out userGuess);
             if (userGuess%2==0)
             {
                 Console.WriteLine($"{userGuess} is an even number.");
@@ -156,7 +156,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             int userGuess;
             Console.WriteLine("Pick a number to decide if it is positive or negative.");
-            userGuess=int.Parse(Console.ReadLine());
+            var works = int.TryParse(Console.ReadLine(), out userGuess);
             if (userGuess > 0)
             {
                 Console.WriteLine($"{userGuess} is a positive number.");
@@ -171,7 +171,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             int userAge;
             Console.Write("Are you old enough to vote? Input age: ");
-            userAge = int.Parse(Console.ReadLine());
+            var works = int.TryParse(Console.ReadLine(), out userAge);
             if (userAge >= 18)
             {
                 Console.WriteLine("You are old enough to vote.");
@@ -186,7 +186,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             int userInput;
             Console.WriteLine("Is your number between -10 and 10? Input number: ");
-            userInput = int.Parse(Console.ReadLine());
+            var works = int.TryParse(Console.ReadLine(), out userInput);
             if (userInput >= -10 && userInput <= 10)
             {
                 Console.WriteLine($"Yes! {userInput} is in range!");
@@ -201,7 +201,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             int multiplicationNumber;
             Console.WriteLine("What number would you like to see the multiplication table for?");
-            multiplicationNumber = int.Parse(Console.ReadLine());
+            var works = int.TryParse(Console.ReadLine(), out multiplicationNumber);
             Console.WriteLine($"{multiplicationNumber * 1}, {multiplicationNumber * 2}, {multiplicationNumber * 3}, {multiplicationNumber * 4}, {multiplicationNumber * 5}, {multiplicationNumber * 6}, " +
                 $"{multiplicationNumber * 7}, {multiplicationNumber * 8}, {multiplicationNumber * 9}, {multiplicationNumber * 10}, {multiplicationNumber * 11}, {multiplicationNumber * 12}");
         }
