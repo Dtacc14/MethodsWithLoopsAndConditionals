@@ -81,32 +81,32 @@ namespace MethodsWithLoopsAndConditionals
             //    Console.WriteLine($"{i}");
             //}
 
-            countingHigh();
+            CountingHigh();
             Console.WriteLine();
 
-            numbersByThree();
+            NumbersByThree();
             Console.WriteLine();
 
-            equal(0, 0);
+            Equal(0, 0);
             Console.WriteLine();
 
-            evenOrOdd();
+            EvenOrOdd();
             Console.WriteLine();
 
-            positiveOrNegative();
+            PositiveOrNegative();
             Console.WriteLine();
 
-            canYouVote();
+            CanYouVote();
             Console.WriteLine();
 
-            inRange();
+            InRange();
             Console.WriteLine();
 
-            multiplication();
+            Multiplication();
             Console.WriteLine();
         }
 
-        static void countingHigh()
+        static void CountingHigh()
         {
             for (int i = 1000; i >= -1000; i--)
             {
@@ -114,14 +114,14 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-        static void numbersByThree()
+        static void NumbersByThree()
         {
             for (int i = 0; i < 1000 ; i += 3)
             {
                 Console.WriteLine(i);
             } 
         }
-        static void equal(int x, int y)
+        static void Equal(int x, int y)
         {
             int userGuess = x;
             int userGuessTwo = y;
@@ -151,7 +151,7 @@ namespace MethodsWithLoopsAndConditionals
                 Console.WriteLine($"{userGuess} is even with {userGuessTwo}.");
             }
         }
-        static void evenOrOdd()
+        static void EvenOrOdd()
         {
             int userGuess;
             do
@@ -170,7 +170,7 @@ namespace MethodsWithLoopsAndConditionals
                 Console.WriteLine($"{userGuess} is an odd number.");
             }
         }
-        static void positiveOrNegative()
+        static void PositiveOrNegative()
         {
             int userGuess;
             do
@@ -190,7 +190,7 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-        static void canYouVote()
+        static void CanYouVote()
         {
             int userAge;
             do
@@ -210,7 +210,7 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-        static void inRange()
+        static void InRange()
         {
             int userInput;
             do
@@ -229,7 +229,7 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-        static void multiplication()
+        static void Multiplication()
         {
             int multiplicationNumber;
             do
